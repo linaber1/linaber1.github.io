@@ -1,6 +1,6 @@
-## Welcome
+## What are the Top-k Top-p parameters/ samplings ?
+Top-p (nucleus) sampling and top-k sampling are techniques used in text generation to control randomness and coherence.
 
-Top k vs Top p sampling:
 Let's say a language model is predicting the next word in the sentence:  
 
 **"The sky is"**  
