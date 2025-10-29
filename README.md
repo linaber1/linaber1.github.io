@@ -31,7 +31,7 @@ This repository hosts a lightweight personal site. For a prettier view, open `in
 
 - **Cultural Exploration:** I have lived in Europe (Switzerland, France), Africa (Tunisia), Asia (China, Japan), and America (United States during early childhood), which has broadened my perspective and appreciation for diverse cultures.  
 
-- **Creativity:** I enjoy making music and writing poetry, activities I find closely related to research—both require curiosity, experimentation, and iteration. In 2022, I released an EP with a French label [RedPalm](https://songstats.com/artist/sp7o12iy/redpalm).  
+- **Creativity:** I enjoy making music and writing poetry, activities I find closely related to research : both require curiosity, experimentation, and iteration. In 2022, I released an EP with a French label [RedPalm](https://songstats.com/artist/sp7o12iy/redpalm).  
 
 - **Dance & Sports:** I practiced ballet for 8 years, developing discipline and focus, and I enjoy a variety of sports to maintain an active and balanced lifestyle.  
 
