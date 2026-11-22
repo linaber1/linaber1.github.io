@@ -56,6 +56,12 @@ p{margin:0}
 .hero-about p{font-size:19px; line-height:1.55; color:var(--text); max-width:31em}
 .hero-about p + p{margin-top:16px}
 .hero-about strong{color:var(--ink)}
+.portrait{width:min(400px,100%); margin:0 auto; border:2px solid var(--ink); background:var(--sky); animation:rise .8s .05s both cubic-bezier(.2,.7,.2,1)}
+.portrait-bar{height:30px; background:var(--ink); display:flex; gap:7px; align-items:center; padding:0 12px}
+.portrait-bar i{width:11px; height:11px; border-radius:50%; background:#FF5F57}
+.portrait-bar i:nth-child(2){background:#FEBC2E}
+.portrait-bar i:nth-child(3){background:#28C840}
+.portrait .photo{aspect-ratio:4/5}
 .select-btn{position:relative; display:inline-block; padding:6px 30px 2px; font-family:var(--display); font-weight:400; font-size:clamp(46px,6vw,84px); line-height:1.1; text-transform:uppercase; letter-spacing:.01em; text-decoration:none}
 .select-btn .bg{position:absolute; inset:0; background:var(--sky); transition:inset .3s cubic-bezier(.3,1.4,.5,1)}
 .select-btn span{position:relative}
