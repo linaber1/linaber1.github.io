@@ -47,21 +47,11 @@ p{margin:0}
 .hero{padding:56px 0 64px}
 .hero .wrap{display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr); gap:64px; align-items:center}
 .hero-left{text-align:center}
-.hero-title{position:relative; display:inline-block; margin:0; font-weight:400; line-height:1; font-size:clamp(64px,8.4vw,124px); padding-top:.4em}
-.hero-title .script{position:absolute; top:0; left:-.16em; font-family:var(--script); font-size:.52em; transform:rotate(-7deg); transform-origin:left bottom; z-index:2; white-space:nowrap;
-  clip-path:inset(-30% 100% -30% -5%); animation:write 1.5s .45s cubic-bezier(.5,0,.3,1) forwards}
-.hero-title .big{display:block; font-family:var(--display); text-transform:uppercase; line-height:.92; letter-spacing:.004em; animation:rise .8s .05s both cubic-bezier(.2,.7,.2,1)}
 .hero-about{animation:fade .8s .7s both}
 .hello{font-family:var(--script); font-weight:400; font-size:clamp(52px,5.6vw,76px); line-height:1.05; margin:0 0 18px}
 .hero-about p{font-size:19px; line-height:1.55; color:var(--text); max-width:31em}
 .hero-about p + p{margin-top:16px}
 .hero-about strong{color:var(--ink)}
-.portrait{width:min(400px,100%); margin:0 auto; border:2px solid var(--ink); background:var(--sky); animation:rise .8s .05s both cubic-bezier(.2,.7,.2,1)}
-.portrait-bar{height:30px; background:var(--ink); display:flex; gap:7px; align-items:center; padding:0 12px}
-.portrait-bar i{width:11px; height:11px; border-radius:50%; background:#FF5F57}
-.portrait-bar i:nth-child(2){background:#FEBC2E}
-.portrait-bar i:nth-child(3){background:#28C840}
-.portrait .photo{aspect-ratio:4/5}
 .select-btn{position:relative; display:inline-block; padding:6px 30px 2px; font-family:var(--display); font-weight:400; font-size:clamp(46px,6vw,84px); line-height:1.1; text-transform:uppercase; letter-spacing:.01em; text-decoration:none}
 .select-btn .bg{position:absolute; inset:0; background:var(--sky); transition:inset .3s cubic-bezier(.3,1.4,.5,1)}
 .select-btn span{position:relative}
@@ -74,21 +64,20 @@ p{margin:0}
 .select-btn:hover .bg{inset:0 -12px}
 .select-btn:hover .hl{transform:translateX(-12px)}
 .select-btn:hover .hr{transform:translateX(12px)}
-.socials{display:flex; justify-content:center; gap:12px; margin-top:34px; flex-wrap:wrap; animation:fade .7s 1s both}
+.socials{display:flex; justify-content:center; gap:12px; margin-top:26px; flex-wrap:wrap; animation:fade .7s 1s both}
 .social{display:inline-flex; align-items:center; gap:8px; padding:9px 17px; border:1.5px solid var(--ink); border-radius:999px; text-decoration:none; font-weight:600; font-size:15px; transition:background .2s,color .2s}
 .social:hover{background:var(--ink); color:var(--paper)}
 .social svg{width:18px; height:18px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round}
 
-.end-photo{display:flex; flex-direction:column; align-items:center}
-.stage{position:relative; width:min(330px,62vw); opacity:0; transform:translateY(16px); transition:opacity .7s, transform .7s}
-.end.inview .stage{opacity:1; transform:none}
+/* photo + folders */
+.hero-photo{display:flex; flex-direction:column; align-items:center; padding-top:46px}
+.stage{position:relative; width:min(330px,62vw); animation:rise .8s .05s both cubic-bezier(.2,.7,.2,1)}
 .photo{position:relative; aspect-ratio:1/1; background:var(--sky); overflow:hidden}
 .photo img{width:100%; height:100%; object-fit:cover}
 .photo.no-photo img{display:none}
 .photo.no-photo::after{content:"LB"; position:absolute; inset:0; display:grid; place-items:center; font-family:var(--display); font-size:150px; color:var(--ink)}
 .folder{position:absolute; z-index:3; width:80px; text-align:center; text-decoration:none; animation:bob 5.5s ease-in-out infinite}
-.folder svg{display:block; width:80px; height:64px; overflow:visible; opacity:0}
-.end.inview .folder svg{opacity:1; animation:pop .6s cubic-bezier(.3,1.6,.5,1) both}
+.folder svg{display:block; width:80px; height:64px; overflow:visible; animation:pop .6s cubic-bezier(.3,1.6,.5,1) both}
 .folder .back{fill:var(--c2)}
 .folder .sheet{fill:#fff; stroke:rgba(0,0,0,.12); transition:transform .3s}
 .folder .front{fill:var(--c); transform-box:fill-box; transform-origin:50% 100%; transition:transform .3s}
@@ -96,17 +85,16 @@ p{margin:0}
 .folder:hover .sheet,.folder:focus-visible .sheet{transform:translateY(-9px)}
 .folder span{display:block; font-size:11.5px; font-weight:600; margin-top:3px; color:var(--ink)}
 .f1{top:-42px; left:6%; --c:#F7A1C4; --c2:#E985B0; animation-delay:-1s}
-.end.inview .f1 svg{animation-delay:.35s}
+.f1 svg{animation-delay:.55s}
 .f2{top:4%; right:-56px; --c:#FFB066; --c2:#F58D3B; animation-delay:-3s}
-.end.inview .f2 svg{animation-delay:.5s}
+.f2 svg{animation-delay:.7s}
 .f3{top:46%; left:-62px; --c:#A2CBF8; --c2:#79AEEE; animation-delay:-2s}
-.end.inview .f3 svg{animation-delay:.65s}
+.f3 svg{animation-delay:.85s}
 .f4{top:66%; right:-60px; --c:#D2EC7C; --c2:#B5D65A; animation-delay:-4s}
-.end.inview .f4 svg{animation-delay:.8s}
+.f4 svg{animation-delay:1s}
 .nametag{display:flex; align-items:center; gap:10px; margin-top:16px; font-weight:800; font-size:18px; text-transform:uppercase; letter-spacing:.01em}
 .nametag svg{width:26px; height:26px; transform-origin:30% 20%; animation:click 2.6s 1.8s ease-in-out infinite}
 
-@keyframes write{to{clip-path:inset(-30% -8% -30% -5%)}}
 @keyframes rise{from{opacity:0; transform:translateY(28px)}}
 @keyframes fade{from{opacity:0; transform:translateY(10px)}}
 @keyframes pop{from{opacity:0; transform:scale(.4) rotate(-8deg)}}
@@ -267,9 +255,8 @@ p{margin:0}
 .place{display:inline-flex; align-items:center; gap:7px; border:1.5px solid var(--ink); border-radius:999px; padding:4px 12px; font-size:14px; font-weight:600}
 .place i{width:9px; height:9px; border-radius:50%; background:var(--c)}
 
-/* ---------- closing: let's connect + photo ---------- */
+/* ---------- closing: let's connect ---------- */
 .end{padding:110px 0 0}
-.end-grid{display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr); gap:64px; align-items:center}
 .end-cta{text-align:center}
 .end-cta h2{margin:0}
 .end-email{font-size:19px; color:var(--text); margin:34px 0 22px}
@@ -294,9 +281,7 @@ p{margin:0}
   .nav-links{position:absolute; top:72px; left:0; right:0; flex-direction:column; gap:0; background:var(--paper); border-bottom:1px solid var(--line); padding:6px 28px 18px; opacity:0; transform:translateY(-8px); pointer-events:none; transition:.25s}
   .nav.open .nav-links{opacity:1; transform:none; pointer-events:auto}
   .nav-links a{display:block; padding:12px 0}
-  .hero .wrap,.end-grid{grid-template-columns:minmax(0,1fr)}
-  .hero .wrap{gap:44px}
-  .end-grid{gap:84px}
+  .hero .wrap{grid-template-columns:minmax(0,1fr); gap:44px}
   .acts{grid-template-columns:minmax(0,1fr)}
 }
 @media (max-width:600px){
@@ -318,8 +303,6 @@ p{margin:0}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.001ms!important; animation-iteration-count:1!important; transition-duration:.001ms!important; transition-delay:0s!important}
-  .stage{opacity:1; transform:none}
-  .folder svg{opacity:1}
 }
 </style>
 </head>
@@ -345,21 +328,21 @@ p{margin:0}
     <div class="wrap">
       <div class="hero-left">
         <h1 class="sr-only">Lina Berrayana, Researcher in Machine Learning</h1>
-        <div class="end-photo">
-        <div class="stage">
-          <div class="photo">
-            <img src="cvpicture.jpg.png" alt="Portrait of Lina Berrayana" data-fallbacks="cvpicture.jpg,cvpicture.png"
-                 onerror="var f=(this.dataset.fallbacks||'').split(',').filter(Boolean);if(f.length){this.dataset.fallbacks=f.slice(1).join(',');this.src=f[0];}else{this.onerror=null;this.parentNode.classList.add('no-photo');}">
+        <div class="hero-photo">
+          <div class="stage">
+            <div class="photo">
+              <img src="cvpicture.jpg.png" alt="Portrait of Lina Berrayana" data-fallbacks="cvpicture.jpg,cvpicture.png"
+                   onerror="var f=(this.dataset.fallbacks||'').split(',').filter(Boolean);if(f.length){this.dataset.fallbacks=f.slice(1).join(',');this.src=f[0];}else{this.onerror=null;this.parentNode.classList.add('no-photo');}">
+            </div>
+            <a class="folder f1" href="#publications" aria-label="Go to publications"><svg viewBox="0 0 64 50" aria-hidden="true"><path class="back" d="M2 7a4 4 0 0 1 4-4h15l6 6h31a4 4 0 0 1 4 4v31a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><rect class="sheet" x="8" y="10" width="48" height="30" rx="2"/><path class="front" d="M2 17a4 4 0 0 1 4-4h52a4 4 0 0 1 4 4v27a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/></svg><span>papers_01</span></a>
+            <a class="folder f2" href="#experience" aria-label="Go to experience"><svg viewBox="0 0 64 50" aria-hidden="true"><path class="back" d="M2 7a4 4 0 0 1 4-4h15l6 6h31a4 4 0 0 1 4 4v31a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><rect class="sheet" x="8" y="10" width="48" height="30" rx="2"/><path class="front" d="M2 17a4 4 0 0 1 4-4h52a4 4 0 0 1 4 4v27a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/></svg><span>internships_02</span></a>
+            <a class="folder f3" href="#research" aria-label="Go to research"><svg viewBox="0 0 64 50" aria-hidden="true"><path class="back" d="M2 7a4 4 0 0 1 4-4h15l6 6h31a4 4 0 0 1 4 4v31a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><rect class="sheet" x="8" y="10" width="48" height="30" rx="2"/><path class="front" d="M2 17a4 4 0 0 1 4-4h52a4 4 0 0 1 4 4v27a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/></svg><span>research_03</span></a>
+            <a class="folder f4" href="#contact" aria-label="Go to contact"><svg viewBox="0 0 64 50" aria-hidden="true"><path class="back" d="M2 7a4 4 0 0 1 4-4h15l6 6h31a4 4 0 0 1 4 4v31a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><rect class="sheet" x="8" y="10" width="48" height="30" rx="2"/><path class="front" d="M2 17a4 4 0 0 1 4-4h52a4 4 0 0 1 4 4v27a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/></svg><span>contact_04</span></a>
           </div>
-          <a class="folder f1" href="#publications" aria-label="Go to publications"><svg viewBox="0 0 64 50" aria-hidden="true"><path class="back" d="M2 7a4 4 0 0 1 4-4h15l6 6h31a4 4 0 0 1 4 4v31a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><rect class="sheet" x="8" y="10" width="48" height="30" rx="2"/><path class="front" d="M2 17a4 4 0 0 1 4-4h52a4 4 0 0 1 4 4v27a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/></svg><span>papers_01</span></a>
-          <a class="folder f2" href="#experience" aria-label="Go to experience"><svg viewBox="0 0 64 50" aria-hidden="true"><path class="back" d="M2 7a4 4 0 0 1 4-4h15l6 6h31a4 4 0 0 1 4 4v31a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><rect class="sheet" x="8" y="10" width="48" height="30" rx="2"/><path class="front" d="M2 17a4 4 0 0 1 4-4h52a4 4 0 0 1 4 4v27a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/></svg><span>internships_02</span></a>
-          <a class="folder f3" href="#research" aria-label="Go to research"><svg viewBox="0 0 64 50" aria-hidden="true"><path class="back" d="M2 7a4 4 0 0 1 4-4h15l6 6h31a4 4 0 0 1 4 4v31a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><rect class="sheet" x="8" y="10" width="48" height="30" rx="2"/><path class="front" d="M2 17a4 4 0 0 1 4-4h52a4 4 0 0 1 4 4v27a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/></svg><span>research_03</span></a>
-          <a class="folder f4" href="#activities" aria-label="Go to other activities"><svg viewBox="0 0 64 50" aria-hidden="true"><path class="back" d="M2 7a4 4 0 0 1 4-4h15l6 6h31a4 4 0 0 1 4 4v31a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><rect class="sheet" x="8" y="10" width="48" height="30" rx="2"/><path class="front" d="M2 17a4 4 0 0 1 4-4h52a4 4 0 0 1 4 4v27a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/></svg><span>music_04</span></a>
+          <div class="nametag">Lina Berrayana
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3l14 7.5-6 1.6 3.6 6.4-2.6 1.5-3.6-6.4L6 18z" fill="#fff" stroke="#1C1B1A" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </div>
         </div>
-        <div class="nametag">Lina Berrayana
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3l14 7.5-6 1.6 3.6 6.4-2.6 1.5-3.6-6.4L6 18z" fill="#fff" stroke="#1C1B1A" stroke-width="1.6" stroke-linejoin="round"/></svg>
-        </div>
-      </div>
         <div class="socials">
           <a class="social" href="mailto:lina.berrayana@epfl.ch">
             <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>Email</a>
@@ -552,31 +535,14 @@ p{margin:0}
 <!-- ================= LET'S CONNECT ================= -->
 <footer class="end" id="contact">
   <div class="wrap">
-    <div class="end-grid">
-      <div class="end-cta">
-        <h2><a class="select-btn" href="mailto:lina.berrayana@epfl.ch"><i class="bg"></i><i class="hl"></i><i class="hr"></i><span>Let's connect</span></a></h2>
-        <p class="end-email">lina.berrayana@epfl.ch</p>
-        <div class="cta-row">
-          <a class="btn" href="mailto:lina.berrayana@epfl.ch"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>Email me</a>
-          <button class="btn" id="copy-email" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg>Copy email</button>
-          <a class="btn" href="https://www.linkedin.com/in/lina-berrayana-431046257/" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn" href="https://github.com/LSIR/llm-mediator-simulation/tree/debateSim" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-      <div class="end-photo">
-        <div class="stage">
-          <div class="photo">
-            <img src="cvpicture.jpg.png" alt="Portrait of Lina Berrayana" data-fallbacks="cvpicture.jpg,cvpicture.png"
-                 onerror="var f=(this.dataset.fallbacks||'').split(',').filter(Boolean);if(f.length){this.dataset.fallbacks=f.slice(1).join(',');this.src=f[0];}else{this.onerror=null;this.parentNode.classList.add('no-photo');}">
-          </div>
-          <a class="folder f1" href="#publications" aria-label="Go to publications"><svg viewBox="0 0 64 50" aria-hidden="true"><path class="back" d="M2 7a4 4 0 0 1 4-4h15l6 6h31a4 4 0 0 1 4 4v31a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><rect class="sheet" x="8" y="10" width="48" height="30" rx="2"/><path class="front" d="M2 17a4 4 0 0 1 4-4h52a4 4 0 0 1 4 4v27a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/></svg><span>papers_01</span></a>
-          <a class="folder f2" href="#experience" aria-label="Go to experience"><svg viewBox="0 0 64 50" aria-hidden="true"><path class="back" d="M2 7a4 4 0 0 1 4-4h15l6 6h31a4 4 0 0 1 4 4v31a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><rect class="sheet" x="8" y="10" width="48" height="30" rx="2"/><path class="front" d="M2 17a4 4 0 0 1 4-4h52a4 4 0 0 1 4 4v27a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/></svg><span>internships_02</span></a>
-          <a class="folder f3" href="#research" aria-label="Go to research"><svg viewBox="0 0 64 50" aria-hidden="true"><path class="back" d="M2 7a4 4 0 0 1 4-4h15l6 6h31a4 4 0 0 1 4 4v31a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><rect class="sheet" x="8" y="10" width="48" height="30" rx="2"/><path class="front" d="M2 17a4 4 0 0 1 4-4h52a4 4 0 0 1 4 4v27a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/></svg><span>research_03</span></a>
-          <a class="folder f4" href="#activities" aria-label="Go to other activities"><svg viewBox="0 0 64 50" aria-hidden="true"><path class="back" d="M2 7a4 4 0 0 1 4-4h15l6 6h31a4 4 0 0 1 4 4v31a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><rect class="sheet" x="8" y="10" width="48" height="30" rx="2"/><path class="front" d="M2 17a4 4 0 0 1 4-4h52a4 4 0 0 1 4 4v27a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/></svg><span>music_04</span></a>
-        </div>
-        <div class="nametag">Lina Berrayana
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3l14 7.5-6 1.6 3.6 6.4-2.6 1.5-3.6-6.4L6 18z" fill="#fff" stroke="#1C1B1A" stroke-width="1.6" stroke-linejoin="round"/></svg>
-        </div>
+    <div class="end-cta">
+      <h2><a class="select-btn" href="mailto:lina.berrayana@epfl.ch"><i class="bg"></i><i class="hl"></i><i class="hr"></i><span>Let's connect</span></a></h2>
+      <p class="end-email">lina.berrayana@epfl.ch</p>
+      <div class="cta-row">
+        <a class="btn" href="mailto:lina.berrayana@epfl.ch"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>Email me</a>
+        <button class="btn" id="copy-email" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg>Copy email</button>
+        <a class="btn" href="https://www.linkedin.com/in/lina-berrayana-431046257/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/LSIR/llm-mediator-simulation/tree/debateSim" target="_blank" rel="noopener">GitHub</a>
       </div>
     </div>
     <div class="foot"><span>© <span id="year">2026</span> Lina Berrayana</span><a href="#top">Back to top</a></div>
@@ -850,10 +816,6 @@ p{margin:0}
     }, { rootMargin: '-45% 0px -50% 0px' });
     Object.keys(links).forEach(function (id) { var s = document.getElementById(id); if (s) spy.observe(s); });
   }
-
-  /* ---------- closing section: photo + folders pop in ---------- */
-  var endSec = document.getElementById('contact');
-  onView(endSec, function () { endSec.classList.add('inview'); }, 0.25);
 
   /* ---------- copy email ---------- */
   var toast = document.getElementById('toast'), tt;
