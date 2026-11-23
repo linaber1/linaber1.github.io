@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lina Berrayana — Researcher in Machine Learning</title>
-<meta name="description" content="Lina Berrayana, Master's student in Data Science at EPFL working on reasoning and planning with generative models: discrete diffusion, latent and autoregressive collaboration, and robust LLM evaluation.">
+<meta name="description" content="Lina Berrayana, machine learning researcher (M.S. in Data Science, EPFL) looking for a PhD position. Research on reasoning in LLMs, discrete diffusion language models and latent communication.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800&family=Great+Vibes&display=swap" rel="stylesheet">
@@ -216,44 +216,51 @@ p{margin:0}
 
 /* ---------- experience ---------- */
 .experience{padding:110px 0}
-.files{display:grid; grid-template-columns:repeat(3,1fr); gap:30px}
-.file{position:relative; background:var(--white); border:1.5px solid var(--ink); border-radius:0 14px 14px 14px; padding:28px 26px 26px; margin-top:26px}
+.files{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:34px 30px}
+.file{position:relative; background:var(--white); border:1.5px solid var(--ink); border-radius:0 14px 14px 14px; padding:28px 28px 24px; margin-top:26px}
 .file::before{content:attr(data-tab); position:absolute; left:-1.5px; top:-27px; height:27px; padding:0 18px; display:flex; align-items:center; background:var(--c); border:1.5px solid var(--ink); border-bottom:0; border-radius:10px 10px 0 0; font-size:13px; font-weight:700}
-.file h3{font-family:var(--display); font-weight:400; font-size:31px; line-height:1.05; margin:0 0 8px; letter-spacing:.005em}
-.file .role{font-weight:700; margin-bottom:10px}
-.file p{color:var(--text); font-size:16px; line-height:1.5}
+.file h3{font-family:var(--display); font-weight:400; font-size:31px; line-height:1.05; margin:0 0 6px; letter-spacing:.005em}
+.file .role{font-weight:700}
+.file .sup{font-size:15px; color:var(--muted); margin:2px 0 14px}
+.file .sup a,.earlier a,.bcard a{color:var(--ink); text-underline-offset:3px}
+.file ul{margin:0 0 18px; padding-left:18px; color:var(--text); font-size:15.5px; line-height:1.5}
+.file li + li{margin-top:6px}
+.file .out{display:inline-block; font-size:14.5px; font-weight:600; line-height:1.4; background:var(--c); border:1.5px solid var(--ink); border-radius:8px; padding:6px 12px}
+.file .out a{color:var(--ink); text-underline-offset:3px}
+.sub-h{font-weight:800; text-transform:uppercase; font-size:17px; letter-spacing:.01em; margin:68px 0 0}
+.earlier{list-style:none; margin:16px 0 0; padding:0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 34px; border-top:1.5px solid var(--ink)}
+.earlier li{padding:16px 0; border-bottom:1px solid var(--line)}
+.row-head{display:flex; justify-content:space-between; align-items:baseline; gap:4px 12px; flex-wrap:wrap}
+.row-head b{font-size:16px}
+.row-head span{font-size:14px; color:var(--muted); white-space:nowrap}
+.earlier p,.rows p{font-size:15px; color:var(--text); line-height:1.5; margin-top:3px}
 
-/* ---------- activities ---------- */
-.activities{background:var(--blush); --bg:var(--blush); padding:110px 0}
-.acts{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px}
-.act{background:var(--white); border:1.5px solid var(--ink); border-radius:16px; padding:28px; display:grid; grid-template-columns:minmax(0,1fr) 116px; gap:22px; align-items:start}
-.act h3{font-weight:800; text-transform:uppercase; font-size:18px; letter-spacing:.01em; margin:0 0 10px}
-.act p{font-size:16px; line-height:1.55; color:var(--text)}
-.act p a{font-weight:700; text-underline-offset:3px}
-.viz{display:grid; place-items:center}
-.stamp{width:116px; height:116px}
-.stamp .spin{transform-origin:60px 60px; animation:spin 26s linear infinite}
-.stamp text{font-family:var(--body)}
-@keyframes spin{to{transform:rotate(360deg)}}
-.eq{display:flex; align-items:flex-end; gap:6px; height:84px}
-.eq i{display:block; width:14px; height:100%; border:1.5px solid var(--ink); border-radius:4px; transform-origin:bottom; animation:eq 1.1s ease-in-out infinite alternate}
-.eq i:nth-child(1){background:var(--pink); animation-duration:.9s}
-.eq i:nth-child(2){background:var(--orange); animation-duration:1.25s; animation-delay:-.4s}
-.eq i:nth-child(3){background:var(--blue); animation-duration:.8s; animation-delay:-.2s}
-.eq i:nth-child(4){background:var(--lime); animation-duration:1.4s; animation-delay:-.7s}
-.eq i:nth-child(5){background:var(--pink); animation-duration:1s; animation-delay:-.3s}
-@keyframes eq{from{transform:scaleY(.25)}to{transform:scaleY(1)}}
-.big8{text-align:center; line-height:1}
-.big8 b{display:block; font-family:var(--display); font-weight:400; font-size:92px; line-height:.9}
-.big8 span{font-size:13px; font-weight:600; color:var(--muted)}
-.medals{display:flex; flex-direction:column; gap:10px}
-.medal{width:62px; height:62px; border-radius:50%; border:1.5px solid var(--ink); display:grid; place-items:center; text-align:center; line-height:1.05; font-size:10.5px; font-weight:600}
-.medal b{display:block; font-family:var(--display); font-weight:400; font-size:22px}
-.medal:nth-child(1){background:var(--lime)}
-.medal:nth-child(2){background:var(--orange); margin-left:40px; margin-top:-22px}
-.places{grid-column:1/-1; display:flex; flex-wrap:wrap; gap:8px; margin-top:-4px}
-.place{display:inline-flex; align-items:center; gap:7px; border:1.5px solid var(--ink); border-radius:999px; padding:4px 12px; font-size:14px; font-weight:600}
-.place i{width:9px; height:9px; border-radius:50%; background:var(--c)}
+/* ---------- background (for PhD supervisors) ---------- */
+.background{background:var(--blush); --bg:var(--blush); padding:110px 0}
+.bcols{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px; align-items:start}
+.bcol{display:grid; gap:28px}
+.bcard{background:var(--white); border:1.5px solid var(--ink); border-radius:16px; padding:26px 28px}
+.bcard h3{display:flex; align-items:center; gap:10px; font-weight:800; text-transform:uppercase; font-size:17px; letter-spacing:.01em; margin:0 0 16px}
+.bcard h3::before{content:""; flex:none; width:14px; height:14px; border-radius:4px; background:var(--c); border:1.5px solid var(--ink)}
+.bcard h4{font-size:14px; font-weight:700; color:var(--muted); margin:22px 0 8px}
+.bcard ul{list-style:none; margin:0; padding:0}
+.rows li + li{margin-top:14px}
+.skills{margin:0}
+.skills dt{font-size:14px; font-weight:700; color:var(--muted); margin-top:16px}
+.skills dt:first-child{margin-top:0}
+.skills dd{margin:7px 0 0; display:flex; flex-wrap:wrap; gap:6px}
+.chip{border:1.5px solid var(--ink); border-radius:999px; padding:3px 11px; font-size:13.5px; font-weight:600; line-height:1.5}
+.refs li + li{margin-top:12px}
+.refs a{font-weight:700}
+.refs span{display:block; font-size:14.5px; color:var(--text); line-height:1.45}
+.bcard .note{font-size:14px; color:var(--muted); margin-top:16px}
+.langs li{display:flex; justify-content:space-between; gap:12px; padding:9px 0; border-bottom:1px solid var(--line); font-size:15.5px}
+.langs li:first-child{padding-top:0}
+.langs li span{color:var(--muted); text-align:right}
+
+/* ---------- patent row under publications ---------- */
+.patent{display:flex; align-items:baseline; gap:8px 14px; flex-wrap:wrap; margin-top:22px; padding:18px 24px; border:1px dashed #D2D2D2; border-radius:12px; font-size:16px; line-height:1.5; color:#5A5A5A}
+.patent b{color:var(--ink)}
 
 /* ---------- closing: let's connect ---------- */
 .end{padding:110px 0 0}
@@ -273,7 +280,7 @@ p{margin:0}
 @media (max-width:1040px){
   .pubs{grid-template-columns:minmax(0,1fr)}
   .pub:last-child:nth-child(odd){grid-column:auto}
-  .files{grid-template-columns:minmax(0,1fr); max-width:560px; margin-inline:auto}
+  .files,.earlier{grid-template-columns:minmax(0,1fr)}
   .cards3{grid-template-columns:minmax(0,1fr); max-width:560px; margin-inline:auto; gap:18px}
 }
 @media (max-width:880px){
@@ -282,20 +289,19 @@ p{margin:0}
   .nav.open .nav-links{opacity:1; transform:none; pointer-events:auto}
   .nav-links a{display:block; padding:12px 0}
   .hero .wrap{grid-template-columns:minmax(0,1fr); gap:44px}
-  .acts{grid-template-columns:minmax(0,1fr)}
+  .bcols{grid-template-columns:minmax(0,1fr)}
 }
 @media (max-width:600px){
   .wrap{padding:0 20px}
   .hero{padding:28px 0 84px}
-  .pubs-sec,.experience,.activities{padding:80px 0}
+  .pubs-sec,.experience,.background{padding:80px 0}
   .research{padding:56px 0 64px}
   .end{padding-top:80px}
   .rc{grid-template-columns:112px minmax(0,1fr); gap:14px}
   .pub{grid-template-columns:minmax(0,1fr); padding:18px}
   .pub-thumb{width:100%}
-  .act{grid-template-columns:minmax(0,1fr) 92px; padding:22px}
-  .stamp{width:92px; height:92px}
-  .big8 b{font-size:72px}
+  .file{padding:24px 20px 20px}
+  .bcard{padding:22px 20px}
   .f2{right:-40px}.f3{left:-44px}.f4{right:-44px}
   .folder,.folder svg{width:66px}.folder svg{height:53px}
   .mega{margin-bottom:44px}
@@ -316,7 +322,7 @@ p{margin:0}
       <li><a href="#research">Research</a></li>
       <li><a href="#publications">Publications</a></li>
       <li><a href="#experience">Experience</a></li>
-      <li><a href="#activities">Activities</a></li>
+      <li><a href="#background">Background</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -344,7 +350,11 @@ p{margin:0}
           </div>
         </div>
         <div class="socials">
-          <a class="social" href="mailto:lina.berrayana@epfl.ch">
+          <a class="social" href="LinaBerrayana_CV_PhD.pdf" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></svg>CV</a>
+          <a class="social" href="https://scholar.google.com/citations?user=5tEEFdUAAAAJ" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg>Google Scholar</a>
+          <a class="social" href="mailto:lina.berrayana@gmail.com">
             <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>Email</a>
           <a class="social" href="https://www.linkedin.com/in/lina-berrayana-431046257/" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M6 16c.6-2 1.7-3 3-3s2.4 1 3 3M14.5 9.5h4M14.5 13h4"/></svg>LinkedIn</a>
@@ -354,8 +364,9 @@ p{margin:0}
       </div>
       <div class="hero-about">
         <h2 class="hello">Hi, I'm Lina!</h2>
-        <p>I am a <strong>Master's student in Data Science at EPFL</strong> working on reasoning and planning with generative models.</p>
-        <p>My work focuses on <strong>discrete diffusion models</strong>, <strong>collaboration between latent and autoregressive systems</strong>, and <strong>evaluation methods for robust and interpretable LLM behavior</strong>.</p>
+        <p>I'm a machine learning researcher with an <strong>M.S. in Data Science from EPFL</strong>, and I'm looking for a <strong>PhD position</strong>.</p>
+        <p>My research focuses on <strong>reasoning in LLMs</strong>, <strong>discrete diffusion language models</strong> and <strong>latent communication</strong> between models.</p>
+        <p>In 3 years of NLP research at NEC Labs, Microsoft Research, ETH Zürich and IBM Research, I've written 3 first-author papers accepted or under review at ICLR and ACL.</p>
       </div>
     </div>
   </section>
@@ -402,16 +413,17 @@ p{margin:0}
       </div>
       <div class="pubs">
 
-        <!-- TODO: replace title / authors / venue with the final ones from the PDF -->
         <article class="pub" id="pub-order">
-          <div class="pub-thumb"><svg class="scene" data-scene="order" viewBox="0 0 240 180" role="img" aria-label="Animation: tokens 2 + 3 = 5 unmasked in two orders. Order A fills the answer last and gets 5; order B commits to the answer first, before the tokens it depends on, and gets 7."></svg></div>
+          <div class="pub-thumb"><svg class="scene" data-scene="order" viewBox="0 0 240 180" role="img" aria-label="Animation: tokens 2 + 3 = 5 unmasked in two orders. Order A fills the answer last and gets 5; order B reveals the answer first, before the tokens it depends on, violating the dependency and getting 7."></svg></div>
           <div class="pub-body">
-            <div class="pub-meta"><span class="badge">2026</span><span class="venue">Manuscript</span></div>
-            <h3><a href="https://drive.google.com/file/d/1GWDGVlq_hmFM87xEKeDbIiha9e0D-7sj/view?usp=sharing" target="_blank" rel="noopener">Order Dependency Violation</a></h3>
-            <p class="authors"><b>L. Berrayana</b> et al.</p>
+            <div class="pub-meta"><span class="badge">ICLR 2027</span><span class="venue">Under review</span></div>
+            <h3><a href="https://drive.google.com/file/d/1GWDGVlq_hmFM87xEKeDbIiha9e0D-7sj/view?usp=sharing" target="_blank" rel="noopener">Do We Need Dependency-Ready Decoding for Masked Diffusion Language Models?</a></h3>
+            <p class="authors"><b>L. Berrayana</b>, C. Malon, Y. Ishibashi, M. Oyamada</p>
             <div class="pub-links">
               <a class="pill" href="https://drive.google.com/file/d/1GWDGVlq_hmFM87xEKeDbIiha9e0D-7sj/view?usp=sharing" target="_blank" rel="noopener">PDF</a>
+              <button class="pill" aria-expanded="false" aria-controls="sum-order">Summary <svg class="chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
             </div>
+            <div class="summary" id="sum-order"><div><p>Masked diffusion LMs can decode tokens in any order, which means a token can be revealed before the tokens it depends on. Framing decoding as graph path-finding, we show that these dependency violations hurt accuracy on Sudoku and GSM8K. We introduce a KL-based violation measure μ and prove that a max-margin rule with margin above √(2μ) keeps the top-1 prediction stable when any single masked token is revealed, with zero top-1 flips across 17,885 qualifying Sudoku reveals.</p></div></div>
           </div>
         </article>
 
@@ -447,85 +459,153 @@ p{margin:0}
         </article>
 
       </div>
+      <p class="patent"><span class="badge">Patent</span><span><b>Decoupled token-before-position decoding for masked diffusion language models.</b> L. Berrayana, C. Malon, Y. Ishibashi, M. Oyamada. NEC Corporation, 2026 (submitted).</span></p>
     </div>
   </section>
 
   <!-- ================= EXPERIENCE ================= -->
   <section class="experience" id="experience">
     <div class="wrap">
-      <h2 class="mega">Recent experience</h2>
+      <h2 class="mega">Research experience</h2>
       <div class="files">
-        <article class="file" data-tab="Beijing, 2025" style="--c:var(--pink)">
+        <article class="file" data-tab="Tokyo, Mar – Sep 2026" style="--c:var(--lime)">
+          <h3>NEC Labs</h3>
+          <p class="role">AI Research Intern</p>
+          <p class="sup">With <a href="https://www.nec-labs.com/research/machine-learning/people/christopher-malon/" target="_blank" rel="noopener">Dr. Christopher Malon</a> and <a href="https://atcbosselut.github.io/" target="_blank" rel="noopener">Prof. Antoine Bosselut</a> (EPFL)</p>
+          <ul>
+            <li>Framed flexible-order decoding in masked diffusion LMs as graph path-finding and showed that dependency violations hurt accuracy on Sudoku and GSM8K.</li>
+            <li>Developed dependency-aware decoding (attention-based, plus confidence–dependency hybrids) and temporal backtracking for sequence-level self-correction.</li>
+            <li>Proved a max-margin stability guarantee built on a KL-based dependency-violation measure, then verified it: zero top-1 flips across 17,885 Sudoku reveals.</li>
+          </ul>
+          <p class="out"><a href="#pub-order" data-flash>First-author paper under review at ICLR 2027</a>, and co-inventor on an NEC patent</p>
+        </article>
+        <article class="file" data-tab="Beijing, Sep 2025 – Mar 2026" style="--c:var(--pink)">
           <h3>Microsoft Research</h3>
-          <p class="role">Research Intern</p>
-          <p>Theoretical and applied work on masked discrete diffusion in planning frameworks.</p>
+          <p class="role">AI Research Intern</p>
+          <p class="sup">With <a href="https://www.microsoft.com/en-us/research/people/weic/" target="_blank" rel="noopener">Prof. Wei Chen</a></p>
+          <ul>
+            <li>Introduced Latent-DARM, a multi-agent framework where a diffusion language model plans and an autoregressive model executes, communicating through a learned latent channel instead of text.</li>
+            <li>Ongoing: a self-correction remasking strategy inspired by speculative decoding, which verifies a whole block of tokens in one forward pass for efficient block diffusion.</li>
+          </ul>
+          <p class="out"><a href="#pub-darm" data-flash>First-author paper at the ICLR 2026 LIT Workshop</a></p>
         </article>
-        <article class="file" data-tab="Zurich, 2025" style="--c:var(--orange)">
-          <h3>ETH Zurich</h3>
-          <p class="role">Research Intern</p>
-          <p>Collaboration between discrete diffusion and autoregressive models for reasoning tasks.</p>
+        <article class="file" data-tab="Zurich, Summer 2025" style="--c:var(--orange)">
+          <h3>ETH Zürich</h3>
+          <p class="role">AI Research Intern</p>
+          <p class="sup">With <a href="https://inf.ethz.ch/people/person-detail.hofmann.html" target="_blank" rel="noopener">Prof. Thomas Hofmann</a></p>
+          <ul>
+            <li>Studied whether diffusion and autoregressive LMs can complement each other in reasoning. Latent communication doubled accuracy on DART-5 (27% to 54%) and lifted AIME24 from 0% to 14% compared with text.</li>
+          </ul>
+          <p class="out"><a href="https://arxiv.org/abs/2510.15244" target="_blank" rel="noopener">First-author preprint on arXiv</a></p>
         </article>
-        <article class="file" data-tab="Zurich, 2025" style="--c:var(--blue)">
+        <article class="file" data-tab="Zurich, Feb – Jul 2025" style="--c:var(--blue)">
           <h3>IBM Research</h3>
-          <p class="role">Machine Learning Engineer Intern</p>
-          <p>Evaluation systems and agentic LLM reliability.</p>
+          <p class="role">ML Engineer &amp; Research Intern</p>
+          <p class="sup">With <a href="https://research.ibm.com/people/ioana-giurgiu" target="_blank" rel="noopener">Dr. Ioana Giurgiu</a></p>
+          <ul>
+            <li>Analyzed how evaluation methods affect bias assessment in LLMs, showing that the choice of evaluation framework can distort the outcome.</li>
+            <li>Contributed to <a href="https://www.unitxt.ai/en/latest/" target="_blank" rel="noopener">Unitxt</a>, IBM's open-source library for evaluating LLMs on enterprise use cases, and authored a context-aware, culturally informed agentic evaluation framework.</li>
+          </ul>
+          <p class="out"><a href="#pub-bias" data-flash>First-author paper at the ACL 2025 GEM Workshop</a></p>
         </article>
       </div>
+
+      <h3 class="sub-h">Earlier research and projects</h3>
+      <ul class="earlier">
+        <li>
+          <div class="row-head"><b>EPFL LSIR Lab, Research Assistant</b><span>Sep 2024 – Jan 2025</span></div>
+          <p>With <a href="https://people.epfl.ch/karl.aberer" target="_blank" rel="noopener">Prof. Karl Aberer</a> and <a href="https://leolaugier.github.io/" target="_blank" rel="noopener">Dr. Leo Laugier</a>. LLM-driven mediation of social-media debates, with memory systems for realistic conversation tracking: +10.6% response diversity, −15% lexical repetition, +4.6% similarity to real human debates. <a href="https://drive.google.com/file/d/1575z2HZfJslBUDksMzg2ciJjZIQhJcaI/view?usp=sharing" target="_blank" rel="noopener">Report</a>, <a href="https://drive.google.com/file/d/1Jc9UCDa3l_h3UnM1FG3vaFDujbCHrjBH/view?usp=sharing" target="_blank" rel="noopener">slides</a></p>
+        </li>
+        <li>
+          <div class="row-head"><b>Proxym Group, Machine Learning Intern</b><span>Paris, Summer 2024</span></div>
+          <p>Built an interpretable credit-risk model from non-traditional client data, predicting late payments with 94% accuracy.</p>
+        </li>
+        <li>
+          <div class="row-head"><b>EPFL Embedded Systems Lab, Research Assistant</b><span>Sep – Dec 2023</span></div>
+          <p>CNN detecting fear in gender-based violence survivors from wearable physiological signals; expanded the dataset 3.5× and beat the previous best model in leave-one-subject-out evaluation (AUC 0.671 vs. 0.642). <a href="https://drive.google.com/file/d/1ityXfBJx15GlKeM0vuBJMvvS7XJ6oChx/view" target="_blank" rel="noopener">Report</a></p>
+        </li>
+        <li>
+          <div class="row-head"><b>EPFL REACT Lab, Bachelor Project</b><span>Feb – Jun 2023</span></div>
+          <p>Extended an anti-bullying educational chatbot deployed in schools in Canton Vaud, with a quiz scoring system and a backend ready for Swiss data compliance. <a href="https://drive.google.com/file/d/1N1mBbrCGj4QJU9U_NlMFn9Kcaj6S1DBR/view" target="_blank" rel="noopener">Report</a></p>
+        </li>
+      </ul>
     </div>
   </section>
 
-  <!-- ================= ACTIVITIES ================= -->
-  <section class="activities" id="activities">
+  <!-- ================= BACKGROUND ================= -->
+  <section class="background" id="background">
     <div class="wrap">
-      <h2 class="mega"><span class="script halo">beyond the lab</span>Other activities</h2>
-      <div class="acts">
-        <article class="act">
-          <div>
-            <h3>Cultural exploration</h3>
-            <p>I have lived in Europe (Switzerland, France), Africa (Tunisia), Asia (China, Japan), and America (United States during early childhood), which has broadened my perspective and appreciation for diverse cultures.</p>
-          </div>
-          <div class="viz" aria-hidden="true">
-            <svg class="stamp" viewBox="0 0 120 120">
-              <defs><path id="ring" d="M60 60m-45 0a45 45 0 1 1 90 0a45 45 0 1 1-90 0"/></defs>
-              <circle cx="60" cy="60" r="57" fill="#D7E8FB" stroke="#1C1B1A" stroke-width="1.5"/>
-              <g class="spin"><text font-size="10.5" font-weight="700" letter-spacing="1.5"><textPath href="#ring" textLength="276">EUROPE ✦ AFRICA ✦ ASIA ✦ AMERICA ✦</textPath></text></g>
-              <circle cx="60" cy="60" r="31" fill="#fff" stroke="#1C1B1A" stroke-width="1.5"/>
-              <text x="60" y="66" text-anchor="middle" font-family="Anton, Impact, sans-serif" font-size="30">6</text>
-              <text x="60" y="80" text-anchor="middle" font-size="8.5" font-weight="600" fill="#6B6660">countries</text>
-            </svg>
-          </div>
-          <div class="places">
-            <span class="place" style="--c:var(--pink)"><i></i>Switzerland</span>
-            <span class="place" style="--c:var(--pink)"><i></i>France</span>
-            <span class="place" style="--c:var(--orange)"><i></i>Tunisia</span>
-            <span class="place" style="--c:var(--blue)"><i></i>China</span>
-            <span class="place" style="--c:var(--blue)"><i></i>Japan</span>
-            <span class="place" style="--c:var(--lime)"><i></i>United States</span>
-          </div>
-        </article>
-        <article class="act">
-          <div>
-            <h3>Creativity</h3>
-            <p>I enjoy making music and writing poetry, activities I find closely related to research: both require curiosity, experimentation, and iteration. In 2022, I released an EP with a French label, <a href="https://songstats.com/artist/sp7o12iy/redpalm" target="_blank" rel="noopener">RedPalm</a>.</p>
-          </div>
-          <div class="viz" aria-hidden="true"><div class="eq"><i></i><i></i><i></i><i></i><i></i></div></div>
-        </article>
-        <article class="act">
-          <div>
-            <h3>Dance &amp; sports</h3>
-            <p>I practiced ballet for 8 years, developing discipline and focus, and I enjoy a variety of sports to maintain an active and balanced lifestyle.</p>
-          </div>
-          <div class="viz big8" aria-hidden="true"><b>8</b><span>years of ballet</span></div>
-        </article>
-        <article class="act">
-          <div>
-            <h3>Challenges &amp; hackathons</h3>
-            <p>I love tackling challenges and have participated in multiple hackathons. At 15, I won my first hackathon at a startup competition hosted by EPT (the first university of Tunisia) as the youngest participant, and recently earned second prize in the Microsoft Switzerland Hackathon (2025).</p>
-          </div>
-          <div class="viz" aria-hidden="true">
-            <div class="medals"><div class="medal"><span><b>1st</b>age 15</span></div><div class="medal"><span><b>2nd</b>2025</span></div></div>
-          </div>
-        </article>
+      <h2 class="mega"><span class="script halo">at a glance</span>Background</h2>
+      <div class="bcols">
+        <div class="bcol">
+          <article class="bcard" style="--c:var(--pink)">
+            <h3>Education</h3>
+            <ul class="rows">
+              <li><div class="row-head"><b>M.S. in Data Science</b><span>2023 – 2026</span></div><p>EPFL, Lausanne. Machine Learning &amp; NLP.</p></li>
+              <li><div class="row-head"><b>B.S. in Communication Systems &amp; Computer Science</b><span>2019 – 2023</span></div><p>EPFL, Lausanne.</p></li>
+            </ul>
+            <h4>Selected course projects</h4>
+            <ul class="rows">
+              <li><div class="row-head"><b><a href="https://drive.google.com/file/d/1vqgin-BaYr0To1QtF-QJvaQQZNuXKvZl/view" target="_blank" rel="noopener">Post-training an LLM tutor</a></b><span>Modern NLP, 2024</span></div><p>LoRA fine-tuning on ~140K samples, DPO on ~20K curated preference pairs, and GPTQ vs. QLoRA quantization of BLOOM-560M. SFT followed by DPO gave +34.8% accuracy over the base model.</p></li>
+              <li><div class="row-head"><b><a href="https://drive.google.com/file/d/1CQJzBYPCOT9hdfIz_b-Kg-1AqFppkHUk/view?usp=sharing" target="_blank" rel="noopener">Graph-based EEG seizure detection</a></b><span>Network ML, 2025</span></div><p>Spatio-temporal GNN (GAT + LSTM) over 19 EEG electrodes: 0.828 F1 vs. 0.596 for a non-graph LSTM baseline.</p></li>
+            </ul>
+          </article>
+          <article class="bcard" style="--c:var(--blue)">
+            <h3>Teaching &amp; service</h3>
+            <ul class="rows">
+              <li><div class="row-head"><b>Teaching Assistant, EPFL Calculus</b><span>2021 – 2025</span></div><p>Led weekly exercise sessions (12 h/week) across 3 courses over 4 years and graded exams.</p></li>
+              <li><div class="row-head"><b>Instructor</b><span>2019 – 2024</span></div><p>Taught math and programming at Coding Club des Filles, TechSpark Academy, PHASSYL and INPV.</p></li>
+              <li><div class="row-head"><b>Coach, MAN program, EPFL</b><span>2021</span></div><p>Mentored 20 first-year students.</p></li>
+              <li><div class="row-head"><b>Student Representative, EPFL CS School</b><span>2019</span></div><p>Elected by 500+ students as liaison to faculty and administration. Later student delegate for mental health initiatives (2024), leading to academic reforms.</p></li>
+            </ul>
+          </article>
+          <article class="bcard" style="--c:var(--orange)">
+            <h3>Languages &amp; nationality</h3>
+            <ul class="langs">
+              <li>French<span>Native</span></li>
+              <li>English<span>Fluent, TOEFL 104/120</span></li>
+              <li>Arabic<span>Fluent</span></li>
+              <li>Spanish<span>Intermediate</span></li>
+            </ul>
+            <p class="note">Tunisian and French citizen.</p>
+          </article>
+        </div>
+        <div class="bcol">
+          <article class="bcard" style="--c:var(--orange)">
+            <h3>Technical skills</h3>
+            <dl class="skills">
+              <dt>LLM training</dt>
+              <dd><span class="chip">Pre-training</span><span class="chip">Fine-tuning</span><span class="chip">RLHF</span><span class="chip">DPO</span></dd>
+              <dt>Distributed training</dt>
+              <dd><span class="chip">FSDP</span><span class="chip">ZeRO-1/2/3</span><span class="chip">Data, tensor &amp; pipeline parallelism</span><span class="chip">Compute–communication overlap</span></dd>
+              <dt>Inference</dt>
+              <dd><span class="chip">KV &amp; prefix caching</span><span class="chip">Paged attention</span><span class="chip">FlashAttention</span><span class="chip">Speculative decoding</span><span class="chip">RAG</span></dd>
+              <dt>Architectures</dt>
+              <dd><span class="chip">MHA / MQA / GQA</span><span class="chip">Mixture of Experts</span><span class="chip">Masked diffusion LMs</span><span class="chip">Autoregressive LMs</span></dd>
+              <dt>Tools</dt>
+              <dd><span class="chip">Python</span><span class="chip">PyTorch</span><span class="chip">Hugging Face Transformers</span><span class="chip">vLLM</span><span class="chip">LangChain</span><span class="chip">SLURM</span><span class="chip">Multi-GPU clusters</span><span class="chip">Git</span><span class="chip">Linux</span><span class="chip">SQL</span></dd>
+            </dl>
+          </article>
+          <article class="bcard" style="--c:var(--lime)">
+            <h3>Awards &amp; certifications</h3>
+            <ul class="rows">
+              <li><div class="row-head"><b>Winner, RAG Hackathon</b><span>2025</span></div><p>Microsoft Switzerland. <a href="https://www.credly.com/badges/5936ee29-cbfc-47f8-b883-2e3ead32686e/linked_in_profile" target="_blank" rel="noopener">Certificate</a></p></li>
+              <li><div class="row-head"><b>LLM Pre-training, Adaptation &amp; Inference Optimization</b><span>2026</span></div><p><a href="https://tuncis-2026-website-frontend.vercel.app/nvidia-certification" target="_blank" rel="noopener">TUNCIS</a> and NVIDIA training. <a href="https://learn.nvidia.com/certificates?id=CDLlK1fZQIGto6y3Ssd0zA" target="_blank" rel="noopener">Certificate</a></p></li>
+              <li><div class="row-head"><b>Fundamentals of Deep Learning</b><span>2023</span></div><p><a href="https://www.nvidia.com/en-eu/training/instructor-led-workshops/fundamentals-of-deep-learning/" target="_blank" rel="noopener">NVIDIA workshop</a></p></li>
+            </ul>
+          </article>
+          <article class="bcard" style="--c:var(--pink)">
+            <h3>References</h3>
+            <ul class="refs">
+              <li><a href="https://www.microsoft.com/en-us/research/people/weic/" target="_blank" rel="noopener">Prof. Wei Chen</a><span>Principal Researcher and Chair of the Theory Center, Microsoft Research Asia; Adjunct Professor, Tsinghua University</span></li>
+              <li><a href="https://inf.ethz.ch/people/person-detail.hofmann.html" target="_blank" rel="noopener">Prof. Thomas Hofmann</a><span>Full Professor, ETH Zurich</span></li>
+              <li><a href="https://research.ibm.com/people/ioana-giurgiu" target="_blank" rel="noopener">Dr. Ioana Giurgiu</a><span>Senior Research Scientist and Manager, IBM Research Zurich</span></li>
+              <li><a href="https://people.epfl.ch/karl.aberer" target="_blank" rel="noopener">Prof. Karl Aberer</a><span>Honorary Professor, EPFL</span></li>
+              <li><a href="https://leolaugier.github.io/" target="_blank" rel="noopener">Dr. Leo Laugier</a><span>Researcher, Google; formerly Postdoctoral Researcher, EPFL</span></li>
+            </ul>
+            <p class="note">Contact details are in my <a href="LinaBerrayana_CV_PhD.pdf" target="_blank" rel="noopener">CV</a>.</p>
+          </article>
+        </div>
       </div>
     </div>
   </section>
@@ -536,11 +616,13 @@ p{margin:0}
 <footer class="end" id="contact">
   <div class="wrap">
     <div class="end-cta">
-      <h2><a class="select-btn" href="mailto:lina.berrayana@epfl.ch"><i class="bg"></i><i class="hl"></i><i class="hr"></i><span>Let's connect</span></a></h2>
-      <p class="end-email">lina.berrayana@epfl.ch</p>
+      <h2><a class="select-btn" href="mailto:lina.berrayana@gmail.com"><i class="bg"></i><i class="hl"></i><i class="hr"></i><span>Let's connect</span></a></h2>
+      <p class="end-email">lina.berrayana@gmail.com</p>
       <div class="cta-row">
-        <a class="btn" href="mailto:lina.berrayana@epfl.ch"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>Email me</a>
+        <a class="btn" href="mailto:lina.berrayana@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>Email me</a>
         <button class="btn" id="copy-email" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg>Copy email</button>
+        <a class="btn" href="LinaBerrayana_CV_PhD.pdf" target="_blank" rel="noopener">CV</a>
+        <a class="btn" href="https://scholar.google.com/citations?user=5tEEFdUAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
         <a class="btn" href="https://www.linkedin.com/in/lina-berrayana-431046257/" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn" href="https://github.com/LSIR/llm-mediator-simulation/tree/debateSim" target="_blank" rel="noopener">GitHub</a>
       </div>
@@ -784,7 +866,7 @@ p{margin:0}
     });
   });
 
-  /* ---------- research cards → flash the related paper ---------- */
+  /* ---------- links → flash the related paper ---------- */
   document.querySelectorAll('a[data-flash]').forEach(function (a) {
     a.addEventListener('click', function () {
       var t = document.querySelector(a.getAttribute('href'));
@@ -821,7 +903,7 @@ p{margin:0}
   var toast = document.getElementById('toast'), tt;
   function showToast(msg) { toast.textContent = msg; toast.classList.add('show'); clearTimeout(tt); tt = setTimeout(function () { toast.classList.remove('show'); }, 1900); }
   document.getElementById('copy-email').addEventListener('click', function () {
-    var email = 'lina.berrayana@epfl.ch';
+    var email = 'lina.berrayana@gmail.com';
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(email).then(function () { showToast('Email copied'); }, function () { showToast(email); });
     } else { showToast(email); }
